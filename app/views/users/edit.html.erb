@@ -1,0 +1,6 @@
+<h2><%= @user.nickname %>'s Profile</h2>
+
+<%= simple_form_for @user, url: user_path(@user.nickname) do |f| %>
+  <%= f.input :email %>
+  <%= f.submit %>
+<% end %>

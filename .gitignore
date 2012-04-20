@@ -14,3 +14,4 @@
 /log/*.log
 /tmp
 config/initializers/twitter_auth.rb
+db/structure.sql

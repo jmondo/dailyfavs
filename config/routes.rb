@@ -1,8 +1,8 @@
 Dailyfavs::Application.routes.draw do
 
-  get "users/edit"
-
   match "/auth/:provider/callback" => "sessions#create"
+
+  resources :users, only: [:edit, :update]
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
